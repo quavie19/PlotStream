@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bg-primary{
+    background: #f7ede2;
+}
+
+.bg-secondary{
+    background: #84a59d;
+}
+
+.text-primary{
+    color: #f7ede2;
+}
+
+.text-secondary{
+    color: #84a59d;
+}
+
+.text-tertiary{
+    color: #000;
+    
+}
+
+.text-destructive{
+    color: #F5CAC3;
+}
+
+body{
+    font-family: "Inconsolata",
+        monospace;
+}
+
+.btn {
+    background: transparent;
+    border: 1.5px solid #84a59d;
+    padding: 15px 20px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    color: #84a59d;
+}
+
+.btn:hover {
+    background: #84a59d;
+    color: #f7ede2;
+}
+
+/* HEADER SECTION */
+
+.container{
+    height: 100vh;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+h1{
+    font-size: 120px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+
+input{
+border: none;
+border-bottom: 2px solid #84a59d;
+background: transparent;
+outline: none;
+width: 525px;
+text-transform: uppercase;
+font-size: 20px;
+font-weight: 100;
+}
+
+input:focus{
+    background: #f7ede2;
+}
+
+
+
+
+
+.serach-btn{
+    margin-left: 20px;
+}
+
+/* SHOW HEADER SECTION */
+.show-header{
+    height: 100vh;
+}
+
+.back-btn{
+   display: flex;
+   justify-content: flex-end;
+   margin-right: 50px;
+}
+
+
+a:link{
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  color: #84a59d;
+}
+
+a:visited{
+    color: #84a59d;
+}
+
+a:hover{
+    background: #84a59d;
+    color: #f7ede2;
+}
+
+.show-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.show-img{
+    margin-right: 50px;
+
+}
+
+h3{
+    color: #84a59d;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.next-episode-btn{
+    margin-top: 20px;
+}
+
+.episode-description{
+   margin: auto;
+    width: 50%;
+}
+

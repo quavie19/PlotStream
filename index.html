@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlotStream</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container bg-primary">
+      <!-- HEADER SECTION  -->
+      <div id="header" class="header">
+        <h1 class="text-secondary">
+          Plot<span class="text-destructive">stream.</span>
+        </h1>
+        <div class="form">
+          <input
+            class="text-tertiary"
+            id="show-title"
+            type="text"
+            placeholder="Enter Show Name..."
+            oninput="filterShows()"
+          />
+          <button id="search-btn" class="btn search-btn">
+            <a href="#show-header">Search</a>
+          </button>
+        </div>
+      </div>
+      <!-- SHOW INFO SECTION  -->
+      <div
+        id="show-header"
+        class="show-header bg-primary"
+        style="display: none"
+      >
+        <div onclick="backButton()" class="back-btn">
+          <a id="back-btn" href="#header" class="text-secondary btn">Back</a>
+        </div>
+        <div class="show-info">
+          <div id="show-img" class="show-img">
+            <img width="300px" height="400px" src="" alt="" srcset="" />
+          </div>
+          <div class="episde-info">
+            <h3 id="title">Episode Title</h3>
+            <h3>Season: <span id="season-number">1</span></h3>
+            <h3>Episode: <span id="episode-number">1</span></h3>
+            <button id="next-episode-btn" class="btn next-episode-btn">
+              Generate Next Episode
+            </button>
+          </div>
+        </div>
+        <div class="episode-description para text-tertiary"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
