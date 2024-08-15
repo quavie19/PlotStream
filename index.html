@@ -19,11 +19,14 @@
             id="show-title"
             type="text"
             placeholder="Enter Show Name..."
-            oninput="filterShows()"
+            onkeyup="init()"
           />
           <button id="search-btn" class="btn search-btn">
             <a href="#show-header">Search</a>
           </button>
+          <div class="list-of-shows">
+            <ul id="show-list"></ul>
+          </div>
         </div>
       </div>
       <!-- SHOW INFO SECTION  -->

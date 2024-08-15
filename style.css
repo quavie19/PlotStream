@@ -34,7 +34,10 @@
 body{
     font-family: "Inconsolata",
         monospace;
+    background: #f7ede2;
 }
+
+
 
 .btn {
     background: transparent;
@@ -50,18 +53,16 @@ body{
     color: #f7ede2;
 }
 
+
 /* HEADER SECTION */
 
-.container{
-    height: 100vh;
-}
 
-.header{
+#header{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 100vh;
 }
 
 h1{
@@ -87,7 +88,21 @@ input:focus{
     background: #f7ede2;
 }
 
+ul {
+    padding: 15px 0;
+}
 
+ul li {
+    list-style: none;
+    font-size: 20px;
+    padding: 15px 0;
+    text-transform: uppercase;
+}
+
+ul li:hover {
+    background: #F5CAC3;
+
+}
 
 
 
@@ -124,11 +139,17 @@ a:hover{
     color: #f7ede2;
 }
 
+#show-header{
+    height: 100vh;
+    width: 100%;
+}
+
 .show-info{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 80px;
+
 }
 
 .show-img{
@@ -150,3 +171,63 @@ h3{
     width: 50%;
 }
 
+/* Mobile devices (portrait and landscape) */
+@media (max-width: 600px) {
+
+    div #header h1{
+        font-size: 60px;
+
+    }
+
+    input{
+        width: 260px;
+    }
+
+        #search-btn {
+            padding: 0;
+            border: none;
+
+        }
+
+    /* Styles for screens smaller than 600px */
+    #show-header {
+        width: 100%;
+        height: 100vh;
+    }
+
+    #back-btn{
+        padding: 2px;
+        border: none;
+        margin-bottom: 10px;
+    }
+
+    .show-info{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    #show-img{
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+
+    .para{
+        width: auto;
+        margin: 0 30px;
+        padding: 70px 0;
+        height: auto;
+    }
+}
+
+
+/* Tablets (portrait and landscape) */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    /* Styles for screens between 601px and 1024px */
+    body {
+        background-color: lightgreen;
+    }
+}
